@@ -11,7 +11,6 @@ client.query('create table if not exists files (id varchar(50), name varchar(50)
     }
 });
 
-app.get('/', (req, res) => res.send('server running'));
 app.set('view engine', 'ejs');
 app.use("/uploads", express.static("uploads"));
 app.use(express.static('public'));
