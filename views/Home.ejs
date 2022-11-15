@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Upload Files</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <img class="logo" src="/img/download.png" alt="">
+    <div class="drag-area download-area">
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <header>Drag & Drop to Upload File</header>
+        <span>OR</span>
+        <button>Browse File</button>
+        <input type="file" hidden>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>File URL</h4>
+            <section class="sec-copy">
+                <p id="url-text">Some text in the Modal..</p>
+                <button id="copy-btn">Click to copy</button>
+                <span id="copied">Copied!</span>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
